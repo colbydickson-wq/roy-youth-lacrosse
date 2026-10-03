@@ -1,0 +1,121 @@
+// ============================================================
+// EDIT THIS FILE to update the whole website.
+// Anything marked [PLACEHOLDER] must be replaced with real info.
+// ============================================================
+const P = "[PLACEHOLDER]";
+export const siteData = {
+  org: {
+    name: "Roy Youth Lacrosse", city: "Roy, Utah",
+    tagline: "Your child just tried lacrosse. Now let's get them playing.",
+    contactPerson: `${P} Contact Name`, email: `${P} info@example.com`, phone: `${P} (801) 555-0100`,
+    social: [{ label: "Instagram", url: "#" }, { label: "Facebook", url: "#" }],
+  },
+  nav: [["/", "Home"], ["/why-lacrosse", "Why Lacrosse"], ["/learn-lacrosse", "Learn Lacrosse"], ["/equipment", "Equipment"], ["/registration", "Registration"], ["/parents", "Parents"], ["/faq", "FAQ"], ["/contact", "Contact"]] as [string, string][],
+  images: { hero: "" /* e.g. "/images/hero.jpg" (file goes in public/images) */ },
+  announcements: [`${P} Add a short announcement here, or delete this line to hide the banner.`],
+  startHere: [
+    { title: "Learn About Lacrosse", text: "A 2-minute guide for total beginners.", href: "/learn-lacrosse" },
+    { title: "Find Your Age Group", text: "See where your child fits.", href: "/registration" },
+    { title: "Get Your Equipment", text: "What's needed and where to buy it.", href: "/equipment" },
+    { title: "Register", text: "Sign up for the season.", href: "/registration" },
+    { title: "Come to Practice", text: "Times, location, and what to expect.", href: "/registration" },
+    { title: "Have Fun", text: "That's the whole point.", href: "/parents" },
+  ],
+  registration: {
+    url: "#",                                   // CHANGE REGISTRATION LINK HERE
+    dates: `${P} Registration opens/closes`,
+    seasonDates: `${P} Season start and end`,
+    practiceSchedule: `${P} Days and times`,
+    practiceLocation: `${P} Field name and address`,
+    gameSchedule: `${P} Game schedule or link`,
+    fees: [{ item: "Season registration", price: `${P} $___` }, { item: "Other fees (if any)", price: `${P} $___` }],
+    notes: `${P} Anything else families should know before registering.`,
+  },
+  ageGroups: [
+    { name: `${P} Group 1`, ages: `${P} Ages`, note: `${P} Short description` },
+    { name: `${P} Group 2`, ages: `${P} Ages`, note: `${P} Short description` },
+    { name: `${P} Group 3`, ages: `${P} Ages`, note: `${P} Short description` },
+  ],
+  why: [
+    { icon: "⚡", title: "Fast-Paced & Exciting", text: "Constant movement means kids are running, passing, and involved in the play." },
+    { icon: "🤝", title: "Teamwork", text: "Goals come from passing and working together, so every player has a role." },
+    { icon: "💪", title: "Athletic Development", text: "Running, cutting, and throwing build general fitness and coordination." },
+    { icon: "🎯", title: "Hand-Eye Coordination", text: "Catching and throwing with a stick takes practice, and kids see themselves improve." },
+    { icon: "🏃", title: "Speed & Agility", text: "Quick starts, changes of direction, and open-field running are part of the game." },
+    { icon: "🧭", title: "Leadership", text: "Players can grow into roles like captain, goalie, or team organizer over time." },
+    { icon: "🌟", title: "Confidence", text: "Learning a new skill from scratch and getting better at it feels good." },
+    { icon: "🏡", title: "Community", text: "Kids meet friends, and families meet other families around the field." },
+    { icon: "🎓", title: "Keep Playing", text: "Lacrosse is played in many high schools and colleges. Opportunities vary by area and level." },
+  ],
+  learn: {
+    what: "Lacrosse is a team sport where players use a stick with a small net on the end to catch, carry, and throw a rubber ball. The goal is to shoot the ball into the other team's goal.",
+    game: "Two teams try to score on each other's goal while stopping the other team from scoring. Players run the ball up the field, pass to teammates, and take shots.",
+    scoring: "Each time the ball goes into the goal, that team gets one point. The team with the most points at the end wins.",
+    rules: ["Players use the stick to carry, pass, and shoot. Hands can't touch the ball (the goalie is the exception).", "Coaches and referees enforce safety rules about contact.", "Rules differ slightly by age group and league.", `${P} Add any rules specific to our league.`],
+    length: `${P} Game length and number of periods for our age groups.`,
+    positions: [
+      { icon: "🎯", name: "Attack", text: "Score goals and help teammates get open shots." },
+      { icon: "🔁", name: "Midfield", text: "Run the whole field, helping on offense and defense." },
+      { icon: "🛡️", name: "Defense", text: "Stop shots and take the ball away from the other team." },
+      { icon: "🥅", name: "Goalie", text: "Guard the goal and block shots." },
+    ],
+    terms: [
+      { term: "Crosse", def: "The stick used to play." },
+      { term: "Face-off", def: "How play starts: two players compete for the ball in the middle." },
+      { term: "Ground ball", def: "A loose ball on the ground that players fight to scoop up." },
+      { term: "Clear", def: "Moving the ball from the defensive end up the field." },
+      { term: "Cradle", def: "Rocking the stick side to side to keep the ball in the net." },
+    ],
+  },
+  equipment: {
+    note: `${P} Confirm required gear with league rules. Levels below are starting suggestions.`,
+    items: [
+      { name: "Lacrosse Stick", level: "Required", does: "Used to catch, carry, pass, and shoot.", beginner: "Yes", lookFor: `${P} What to look for (size, beginner-friendly models)`, price: `${P} $___` },
+      { name: "Helmet", level: "Required", does: "Protects the head and face.", beginner: "Yes", lookFor: `${P} Fit, safety certification`, price: `${P} $___` },
+      { name: "Gloves", level: "Required", does: "Protect hands and fingers while holding the stick.", beginner: "Yes", lookFor: `${P} Fit and flexibility`, price: `${P} $___` },
+      { name: "Mouthguard", level: "Required", does: "Protects teeth and mouth.", beginner: "Yes", lookFor: `${P} Fit`, price: `${P} $___` },
+      { name: "Shoulder Pads", level: "Recommended", does: "Protect the chest and shoulders.", beginner: `${P} Confirm by age group`, lookFor: `${P} Fit`, price: `${P} $___` },
+      { name: "Elbow Pads", level: "Recommended", does: "Protect elbows and forearms.", beginner: `${P} Confirm by age group`, lookFor: `${P} Fit`, price: `${P} $___` },
+      { name: "Cleats", level: "Recommended", does: "Give grip on grass fields.", beginner: "Helpful", lookFor: `${P} Type of cleat`, price: `${P} $___` },
+      { name: "Athletic Cup", level: "Recommended", does: "Provides protection where applicable.", beginner: `${P} Confirm by age group`, lookFor: `${P} Fit`, price: `${P} $___` },
+      { name: "Practice Clothing", level: "Optional", does: "Comfortable clothes for running and playing.", beginner: "Any athletic wear works", lookFor: "Shorts or athletic pants and a t-shirt", price: `${P} $___` },
+      { name: "Water Bottle", level: "Optional", does: "Keeps players hydrated.", beginner: "Strongly encouraged", lookFor: "Name written on it", price: `${P} $___` },
+    ],
+    where: [
+      { category: "Local Stores", stores: [{ name: `${P} Store name`, url: "#", note: `${P} Note` }] },
+      { category: "Lacrosse Specialty Stores", stores: [{ name: `${P} Store name`, url: "#", note: `${P} Note` }] },
+      { category: "Online Retailers", stores: [{ name: `${P} Retailer name`, url: "#", note: `${P} Note` }] },
+      { category: "Used Equipment", stores: [{ name: `${P} Source`, url: "#", note: `${P} Note` }] },
+    ],
+  },
+  parents: [
+    { q: "Is lacrosse safe?", a: `Lacrosse is a physical sport, and like most sports it carries some risk of injury. Players wear protective equipment, rules limit contact, and coaches teach technique first. ${P} Add our safety policies.` },
+    { q: "How much equipment does my child need?", a: "A stick, helmet, gloves, and mouthguard at minimum, plus pads and other gear depending on age group. See the Equipment page." },
+    { q: "How much does lacrosse cost?", a: `Costs include registration and equipment. ${P} See the Registration page for current fees.` },
+    { q: "How often are practices?", a: `${P} Practice days and times.` },
+    { q: "How long is the season?", a: `${P} Season length.` },
+    { q: "How competitive is youth lacrosse?", a: `${P} Describe our program's approach, such as focus on learning and fun, playing time, and levels.` },
+    { q: "Can my child play another sport?", a: `${P} Describe our policy on playing multiple sports.` },
+    { q: "Does my child need experience?", a: "No. Beginners are welcome, and coaches teach the basics." },
+    { q: "What if my child doesn't like it?", a: `${P} Describe refund or withdrawal policy.` },
+    { q: "What should parents expect at games?", a: `${P} Game-day details: arrival time, sideline expectations, snacks, etc.` },
+    { q: "How involved do parents need to be?", a: `${P} Volunteer or team parent expectations.` },
+  ],
+  faq: [ // Add or remove questions here
+    { q: "What ages can play?", a: `${P} Ages` },
+    { q: "Does my child need experience?", a: "No. Beginners are welcome." },
+    { q: "What equipment do we need?", a: "See the Equipment page for the full list and where to buy." },
+    { q: "How do I register?", a: "Use the Register Now button or see the Registration page." },
+    { q: "How much does it cost?", a: `${P} Fees. See Registration page.` },
+    { q: "Where are practices held?", a: `${P} Location` },
+    { q: "Can girls play?", a: `${P} Confirm girls' program details.` },
+    { q: "Who can I contact?", a: "See the Contact page." },
+  ],
+  event: { name: "Try Lacrosse Night", date: `${P} Date (optional)`, blurb: "Just tried lacrosse? Here's what to do next." },
+  contactResources: [{ label: `${P} Resource name`, url: "#" }],
+  seo: {
+    description: "Roy Youth Lacrosse: everything Roy, Utah families need to start playing lacrosse. Learn the sport, find equipment, and register.",
+    keywords: ["Roy Utah youth lacrosse", "Roy lacrosse", "youth lacrosse near Roy Utah", "Utah youth lacrosse", "try lacrosse Roy Utah"],
+  },
+};
+export type SiteData = typeof siteData;
